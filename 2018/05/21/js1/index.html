@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="• Mosaic是互联网历史上第一个普遍使用和能够显示图片的网页浏览器，1993年问世。• 后来由于商标权的转让，原本的开发团队又开发了Netscape Navigator网景浏览器，也是现在很多浏览器的前身。• js作为Netscape Navigator浏览器的一部分首次出现在1996年，它最初的设计目标是改善网页的用户体验，js的作者是Brendan Eich。• 起初js被命名为LiveS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1初步认识js">
+<meta property="og:url" content="http://yoursite.com/2018/05/21/js1/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="• Mosaic是互联网历史上第一个普遍使用和能够显示图片的网页浏览器，1993年问世。• 后来由于商标权的转让，原本的开发团队又开发了Netscape Navigator网景浏览器，也是现在很多浏览器的前身。• js作为Netscape Navigator浏览器的一部分首次出现在1996年，它最初的设计目标是改善网页的用户体验，js的作者是Brendan Eich。• 起初js被命名为LiveS">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-21T03:47:04.804Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="1初步认识js">
+<meta name="twitter:description" content="• Mosaic是互联网历史上第一个普遍使用和能够显示图片的网页浏览器，1993年问世。• 后来由于商标权的转让，原本的开发团队又开发了Netscape Navigator网景浏览器，也是现在很多浏览器的前身。• js作为Netscape Navigator浏览器的一部分首次出现在1996年，它最初的设计目标是改善网页的用户体验，js的作者是Brendan Eich。• 起初js被命名为LiveS">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/21/js1/"/>
 
 
 
 
 
-  <title>Hexo</title>
+  <title>1初步认识js | Hexo</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/21/js1/" itemprop="url">1初步认识js</a></h1>
+          <h1 class="post-title" itemprop="name headline">1初步认识js</h1>
         
 
         <div class="post-meta">
@@ -298,9 +299,7 @@
       
 
       
-        
-          
-            <p>• Mosaic是互联网历史上第一个普遍使用和能够显示图片的网页浏览器，1993年问世。<br>• 后来由于商标权的转让，原本的开发团队又开发了Netscape Navigator网景浏览器，也是现在很多浏览器的前身。<br>• js作为Netscape Navigator浏览器的一部分首次出现在1996年，它最初的设计目标是改善网页的用户体验，js的作者是Brendan Eich。<br>• 起初js被命名为LiveScript，后因为和Sun公司合作，Sun公司的Java很出名，因为市场宣传需要，所以改名为JavaScript，后来Sun公司被Oracle公司收购，因此js的版权现在归Oralcle所有。<br>浏览器的组成<br>前面提到过，浏览器主要有两部分组成：shell外壳部分和内核部分，其实内核还包括了很多东西。<br>1.渲染引擎，内核里的渲染引擎主要作用于html和css部分，定义了语法规则、渲染规则以及渲染路径和速度等等。<br>2.js引擎。<br>2001年发布了ie6，首次实现对js引擎的优化。<br>2008年Google发布了Chrome，它是采用优化后的js引擎，引擎代号V8，因能把js代码直接转化成机械码0101来执行，进而以速度快而闻名。<br>后来Firefox也推出了具有强大功能的js引擎<br>Firefox 3.5 TraceMonkey（对频繁执行的代码做了路径优化）<br>Firefox 4.0 JeagerMonkey<br>3.其他模块。<br>JavaScript的特点<br>1.解释性语言——不需要编译代码，可以跨平台。<br>像php、js、jsp都是解释性语言。<br>2.单线程——js是单线程的语言，同时只能执行一件事情。<br>3.ECMA标准——为了统一js的规则，推出了ECMA标准，因此js也称为ECMAScript。<br>JavaScript执行队列<br>js中有一个重要的概念就是执行队列。<br>js只有一个主线程，它是单线程的。<br>其他模块把任务分解成好多的小模块，这些小模块排成一个队列，队列最前面的进入主线程执行，执行完之后第二个进入主线程执行，这个队列就是js的执行队列。有点像操作系统里面的轮转时间片。<br>JavaScript三大部分：ECMAScript、DOM、BOM<br>• ECMAScript是符合ECMA标准的基本javascript。<br>• DOM是Document Object Model文档对象模型，可以操作页面的代码，可以操作html和css部分。DOM是非常非常重要的部分。<br>• BOM是Browser Object Model浏览器对象模型，操作浏览器shell的。因为每一个浏览器厂家的不同，导致我们在每一个浏览器操作BOM都不一样，因此这里大概了解一下就可以了。<br>如何引入JavaScript代码<br>到这里我们大概了解javascript是什么东西了，那么我们如何在html页面里面引入js代码呢？<br>1.页面内嵌script标签<br>我们可以在<head>标签里面或者</head><body>标签里面写一个<script></script>，这个标签有一个type属性，如果要写的话就写完整的”text/javascript”，要不然就不写，浏览器会默认是这个type值，如果写还写错的话浏览器就会报错。<br>写完标签之后，我们就可以在这个标签里面写js代码了。<br>2.引入外部js文件<br>script标签除了可以在里面直接写代码之外，还可以写一个src属性来引入外部的js文件。<br>• 有一点值得注意的是，一个script标签只能在里面写代码或者引入外部js文件，不能既引入又在里面写代码。<br>• 一个script标签就是一个代码块，一个页面可以引入多个代码块。<br>• 为了符合传统页面的web标准（w3c标准的一项）：结构、样式、行为相分离，我们一般采用第二种引入外部js文件的方法。我们的html、css、js最好放在专门的文件里面，然后在html里面引入外部文件。<br>• 浏览器在加载我们的html文件的时候，当遇到link标签的时候会异步加载，但是到script标签的时候并不会异步加载，而是会完全不加载后面的内容，而是去下载这个js文件，并且执行js文件里面的内容，之后下载并且执行完全部的js内容之后，浏览器才会继续执行html后面的代码。<br>这样就导致了一个问题，如果js是操作DOM的话，我们页面的DOM还没有出来，js就操作，就会出现错误，而且写在前面如果js文件比较大的话，就会导致页面一直没有内容。<br>因此，为了避免这种情况的出现，我们一般把script标签写在body标签里面的最后一行。<br>JavaScript基本语法<br>• 变量声明<br>js是一种弱数据类型的语言，任何类型的变量都用关键字var来声明。<br>var arr = [1, 2, 3];<br>var num = 123;<br>var string = “abc”;</body></p>
+        <p>• Mosaic是互联网历史上第一个普遍使用和能够显示图片的网页浏览器，1993年问世。<br>• 后来由于商标权的转让，原本的开发团队又开发了Netscape Navigator网景浏览器，也是现在很多浏览器的前身。<br>• js作为Netscape Navigator浏览器的一部分首次出现在1996年，它最初的设计目标是改善网页的用户体验，js的作者是Brendan Eich。<br>• 起初js被命名为LiveScript，后因为和Sun公司合作，Sun公司的Java很出名，因为市场宣传需要，所以改名为JavaScript，后来Sun公司被Oracle公司收购，因此js的版权现在归Oralcle所有。<br>浏览器的组成<br>前面提到过，浏览器主要有两部分组成：shell外壳部分和内核部分，其实内核还包括了很多东西。<br>1.渲染引擎，内核里的渲染引擎主要作用于html和css部分，定义了语法规则、渲染规则以及渲染路径和速度等等。<br>2.js引擎。<br>2001年发布了ie6，首次实现对js引擎的优化。<br>2008年Google发布了Chrome，它是采用优化后的js引擎，引擎代号V8，因能把js代码直接转化成机械码0101来执行，进而以速度快而闻名。<br>后来Firefox也推出了具有强大功能的js引擎<br>Firefox 3.5 TraceMonkey（对频繁执行的代码做了路径优化）<br>Firefox 4.0 JeagerMonkey<br>3.其他模块。<br>JavaScript的特点<br>1.解释性语言——不需要编译代码，可以跨平台。<br>像php、js、jsp都是解释性语言。<br>2.单线程——js是单线程的语言，同时只能执行一件事情。<br>3.ECMA标准——为了统一js的规则，推出了ECMA标准，因此js也称为ECMAScript。<br>JavaScript执行队列<br>js中有一个重要的概念就是执行队列。<br>js只有一个主线程，它是单线程的。<br>其他模块把任务分解成好多的小模块，这些小模块排成一个队列，队列最前面的进入主线程执行，执行完之后第二个进入主线程执行，这个队列就是js的执行队列。有点像操作系统里面的轮转时间片。<br>JavaScript三大部分：ECMAScript、DOM、BOM<br>• ECMAScript是符合ECMA标准的基本javascript。<br>• DOM是Document Object Model文档对象模型，可以操作页面的代码，可以操作html和css部分。DOM是非常非常重要的部分。<br>• BOM是Browser Object Model浏览器对象模型，操作浏览器shell的。因为每一个浏览器厂家的不同，导致我们在每一个浏览器操作BOM都不一样，因此这里大概了解一下就可以了。<br>如何引入JavaScript代码<br>到这里我们大概了解javascript是什么东西了，那么我们如何在html页面里面引入js代码呢？<br>1.页面内嵌script标签<br>我们可以在<head>标签里面或者</head><body>标签里面写一个<script></script>，这个标签有一个type属性，如果要写的话就写完整的”text/javascript”，要不然就不写，浏览器会默认是这个type值，如果写还写错的话浏览器就会报错。<br>写完标签之后，我们就可以在这个标签里面写js代码了。<br>2.引入外部js文件<br>script标签除了可以在里面直接写代码之外，还可以写一个src属性来引入外部的js文件。<br>• 有一点值得注意的是，一个script标签只能在里面写代码或者引入外部js文件，不能既引入又在里面写代码。<br>• 一个script标签就是一个代码块，一个页面可以引入多个代码块。<br>• 为了符合传统页面的web标准（w3c标准的一项）：结构、样式、行为相分离，我们一般采用第二种引入外部js文件的方法。我们的html、css、js最好放在专门的文件里面，然后在html里面引入外部文件。<br>• 浏览器在加载我们的html文件的时候，当遇到link标签的时候会异步加载，但是到script标签的时候并不会异步加载，而是会完全不加载后面的内容，而是去下载这个js文件，并且执行js文件里面的内容，之后下载并且执行完全部的js内容之后，浏览器才会继续执行html后面的代码。<br>这样就导致了一个问题，如果js是操作DOM的话，我们页面的DOM还没有出来，js就操作，就会出现错误，而且写在前面如果js文件比较大的话，就会导致页面一直没有内容。<br>因此，为了避免这种情况的出现，我们一般把script标签写在body标签里面的最后一行。<br>JavaScript基本语法<br>• 变量声明<br>js是一种弱数据类型的语言，任何类型的变量都用关键字var来声明。<br>var arr = [1, 2, 3];<br>var num = 123;<br>var string = “abc”;</body></p>
 <p>赋值可以在声明的同时赋值也可以在后面赋值。<br>var num = 123;<br>var num;<br>num = 123;</p>
 <p>这两种方法是一样的效果。<br>同时，我们有一种单一var模式，当我们要声明多个变量的时候，为了节省代码量，一般只写一个var：<br>var num1 = 123,<br>      num2 = 123,<br>      num3 = 123;<br>JavaScript<br>变量名要上下对齐，这样结构能加清晰，也能节省很多代码。<br>• 变量命名规则<br>1.以英文字母、_、$符号开头。<br>2.变量名可以包括数字。<br>3.不可以使用系统自带的关键字、保留字作为变量名。<br>关键字是被系统定义了语法的单词，像var、window、if、else这一类都算作关键字。（关键字在编辑器里面是可以变色的）<br>保留字是为以后升级可能会变成关键字做的保留，像java、int、enum、abstract、short、boolean等等都是保留字。<br>值类型～数据类型<br>js中的数据的值主要分为两大类：<br>1.不可改变的原始值<br>主要有：Number、String、Boolean、undefined、null<br>这些数据一般叫做栈数据<br>undefined是未定义的意思，而null是空的意思，他们俩的区别在于，null有值，不过这个值是空值，而undefined是未定义，完全没有值的意思。null一般用作占位。<br>var demo = null;<br>console.log(demo); // null<br>var a;<br>console.log(a); //undefined<br>JavaScript<br>我们在浏览器上按F12，打开控制台，就可以看到console.log的结果了。<br>2.引用值<br>主要有：数组array、对象object、函数function<br>这些数据一般叫做堆数据<br>var arr = [1, 2, 3, 4];<br>var object = {<br>      name: ‘demo’,<br>      age: ‘18’<br>}<br>console.log(arr); //1,2,3,4<br>console.log(object); //[Object Object]<br>console.log(object.name); // demo<br>JavaScript<br>那么这两种数据类型的区别在哪里呢？<br>我们举一个例子：<br>var num = 123,<br>      num1 = num;<br>num = 234;<br>console.log(num); //234<br>console.log(num1); //123<br>JavaScript<br>我们发现num的改变对num1完全没有影响。<br>var arr = [1, 2, 3],<br>      arr1 = arr;<br>arr.push(4);<br>arr.push(5);<br>console.log(arr); //1,2,3,4,5<br>console.log(arr1); //1,2,3,4,5<br>JavaScript<br>我们发现我们根本没有改变arr1的值，只是改变了arr的值，但是arr1也跟着改变了，这就是二者之间的第一个区别。<br>不过，如果我们是给arr重新赋值一个新的数组的话，那么arr1并不是这个新的数组。<br>arr = [1, 2, 3, 4, 5];<br>arr1 –&gt; 1, 2, 3<br>这是为什么呢？<br>因为原始值是存放在栈里面的，而引用值是存放在堆里面的，原始值的赋值是把值的内容赋值一份给另一个变量，但是引用值却不是这样。引用值的变量名存在栈里面，但是值却是存在堆里面的，栈里面的变量名只是指向了一个堆空间，这个堆空间存的是我们一开始赋的值，当我们写arr1 = arr的时候，其实是把arr1指向了和arr指向的同一个的堆空间，这样当我们改变arr的内容的时候，其实就是改变了这个堆空间的内容，自然同样指向这个堆空间的arr1的值也随着改变了。</p>
 <p>• 栈内存一点被赋值了，就不可以改变了，我们即使给num重新赋值为234，也是在栈里面重新开辟了一块空间赋值234，然后把num指向了这个空间，前面那个存放123的空间还存在，只是没有指针指向这里罢了。<br>第二点区别则是：原始值不可以被改变，引用值可以被改变。<br>var arr = [1, 2, 3, 4];<br>arr.length = 2;<br>console.log(arr); // 1,2<br>var str = “1234”;<br>str.length = 2;<br>console.log(str); // 1234<br>JavaScript<br>这里涉及了一个包装类的概念，我们后面会提到。<br>JavaScript语句基本规则<br>1.语句后面要用英文分号结束 “;”<br>2.js语法错误会引发后面的代码终止，但不会影响其他的js代码块。这里仅限于逻辑错误，低级的语法错误会导致代码全都执行不了。<br>3.书写要规范，=、+、-、/、%两边都要留有空格。<br>num + 1;</p>
@@ -345,8 +344,6 @@
 <pre><code>var example = example || 100;
 </code></pre><p>}<br>JavaScript<br>当我们调用demo这个函数并且正确传值的时候，函数内部的变量example就是我们传的值，但是如果由于我们疏忽忘记传值的话，那么里面的example就是我们的默认值100。<br>不过这里也有一种缺点，当我们传的参数是一个布尔值的时候，并且传的是false，那么||语句的特点就会忽略掉我们传递的这个参数值而去赋成默认的初始值了，所以为了解决这个弊端，我们就需要利用es6的一些知识了。<br>• 默认为false的值<br>数据中所有的值都可以被转换成true或false，但是true的值实在太多了，因此我们只需要记住false的值，其他的都是true。<br>默认为false：undefined、null、””、NaN、0、false。</p>
 
-          
-        
       
     </div>
     
@@ -363,140 +360,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/21/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/21/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-21T09:12:21+08:00">
-                2018-05-21
-              </time>
+              <a href="/2018/05/21/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -506,147 +391,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/20/html/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/20/html/" itemprop="url">1Html</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-20T09:24:31+08:00">
-                2018-04-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Html–超文本标记   css-层叠样式表<br>专业知识<br>主流浏览器:1.占市场份额&gt;3%   2.有自己研发的独立内核(浏览器分为shell(外壳)和内核)<br>IE———————trident<br>Firefox—————Gecko<br>Geogle chrome—-Blink/webkit<br>Safari—————–webkit<br>Opera—————-presto<br>2.页面的基本框架</p>
-<html>—-根标签<br><head>—-给浏览器看的<br></head><br><body>—-给用户看的<br></body><br></html>
-
-<p></p><p>  </p>段落标签-&gt;独占一行-&gt;成段显示<p></p>
-<p><h1-6>  </h1-6><br>都占一行,大-&gt;小,只有1-6；其中h4的默认大小是正常文字的大小，不过是加粗的。<br><strong></strong>加粗标签<br><em></em>斜体标签<br><del></del>是删除标签，它会在里面的文字中间画一条横线，一般在打折的时候用</p>
-<p><address></address>是地址标签，它会将里面的内容变成斜体并且独占一行<br>容器:div 和span<br>空格:文字分隔符,多个空格也=一个空格<br>若盒子宽度小,一连串字母会不换行,溢出盒子,原因是缺少空格,被当作一个字;<br>若是一连串的文字,会自动换行,装完盒子再溢出;<br>html编码特殊字符:<br>&amp;nbsp-&gt;空格;<br>&amp;lt-&gt;小于号&lt;;less than<br>&amp;gt-&gt;大于号&gt;;great than<br>单标签:不需要修饰其他内容</p>
-<p><meta>     <br>        <hr></p>
-<p><ol>有序列表 </ol></p>
-<p><li></li></p>
-<p><li></li><br>   <br>ol的三个属性<br>type=”a;A;I;i;1”//type的五种排序方式<br>reversed=”reversed”//倒着排序<br>start=”2 ”//从2开始排起,2,3,4</p>
-<p><ul>无序列表 </ul></p>
-<p><li></li></p>
-<p><li></li><br>   <br>type=”disc” //默认实心圆<br>     “square”//实心矩形<br>“circle”//空心圆<br>图片标签;<br><img src="”" ”=""><br>地址1:网上url<br>本地的绝对路径<br>本地的相对路径<br>属性:<br> (1).图片占位符alt=”图片出错后(无法加载),显示的文字信息  ”<br> (2).图片提示符title=”鼠标移到图片后显示的文字信息”<br>a标签:<br><a href="”" ”="" title="“" 这个值是对你链接的网页的文字描述”="" target="“_blank”打开新窗口显示页面">超文本引用</a><br>)超链接<br>)锚点</p>
-<p><div id="”a”">  </div></p>
-<p><div id="”b”">  </div><br><a href="”#a”"></a><br><a href="”#b”"></a><br>)打电话<br><a tel="”" ”=""></a><br>)协议限定符<br><a href="”javascrip=’" 此处可写入javascript的代码="" ’”=""></a><br>表单<form></form>标签<br>    <form action="<!-- 地址 -->" methor="<!-- 发送方式post/get -->"><br>        <!-- 文本域: --><p>用户名:<input type="text" name="username"></p><br>        <!--  密码域:--><p>密码:<input type="password" name="password"></p><br>        <!-- 单选框: --><p>性别:男<input type="radio" name="sexs" value="男"><br>                       女<input type="radio" name="sexs" value="女"></p><br>        <!--单选框 type为radio,name值一样 --><br>        <!-- 复选框: --><p>爱好:篮球<input type="checkbox" name="hobbys" value="篮球"><br>                                足球<input type="checkbox" name="hobbys" value="足球"><br>                                毛球<input type="checkbox" name="hobbys" value="毛球"></p><br>        <!-- 复选框 type为checkbox,name值一样 --><br>        <!-- 简单下拉列表 --><br>                        <p>学历:<select name="xueli"><br>                                <option value="大学">大学</option><br>                                <option value="中学">中学</option><br>                                <option value="小学">小学</option><br>                                <!-- value可不要,若无value.则后面的文字即为值,若有value,则值以value为准 --><br>                                </select><br>                        </p><br>        <!-- 文本域 --><p>简要说明:<textarea name="" id="" cols="30" rows="10"></textarea></p><br>        <!-- 上传头像 --><p><input type="file" name="pic"></p><br>        <!-- 隐藏域 --><p><input type="hidden" name="IP" value="192.35"></p><br>        <!-- 提交按钮 --><p><input type="submit" value="提交"></p><br>        <!-- 默认值:
-            文本框:value=
-            单/复选框:checked="checked" 或者直接checked
-            下拉列表:selected="selected" --><br>    </form></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -654,6 +403,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -850,6 +603,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
