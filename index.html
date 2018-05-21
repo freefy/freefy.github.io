@@ -248,7 +248,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/21/js1/" itemprop="url">1初步认识js</a></h1>
+                <a class="post-title-link" href="/2018/05/21/js1/" itemprop="url">初步认识js</a></h1>
         
 
         <div class="post-meta">
@@ -300,9 +300,22 @@
       
         
           
-            <p>• Mosaic是互联网历史上第一个普遍使用和能够显示图片的网页浏览器，1993年问世。<br>• 后来由于商标权的转让，原本的开发团队又开发了Netscape Navigator网景浏览器，也是现在很多浏览器的前身。<br>• js作为Netscape Navigator浏览器的一部分首次出现在1996年，它最初的设计目标是改善网页的用户体验，js的作者是Brendan Eich。<br>• 起初js被命名为LiveScript，后因为和Sun公司合作，Sun公司的Java很出名，因为市场宣传需要，所以改名为JavaScript，后来Sun公司被Oracle公司收购，因此js的版权现在归Oralcle所有。<br>浏览器的组成<br>前面提到过，浏览器主要有两部分组成：shell外壳部分和内核部分，其实内核还包括了很多东西。<br>1.渲染引擎，内核里的渲染引擎主要作用于html和css部分，定义了语法规则、渲染规则以及渲染路径和速度等等。<br>2.js引擎。<br>2001年发布了ie6，首次实现对js引擎的优化。<br>2008年Google发布了Chrome，它是采用优化后的js引擎，引擎代号V8，因能把js代码直接转化成机械码0101来执行，进而以速度快而闻名。<br>后来Firefox也推出了具有强大功能的js引擎<br>Firefox 3.5 TraceMonkey（对频繁执行的代码做了路径优化）<br>Firefox 4.0 JeagerMonkey<br>3.其他模块。<br>JavaScript的特点<br>1.解释性语言——不需要编译代码，可以跨平台。<br>像php、js、jsp都是解释性语言。<br>2.单线程——js是单线程的语言，同时只能执行一件事情。<br>3.ECMA标准——为了统一js的规则，推出了ECMA标准，因此js也称为ECMAScript。<br>JavaScript执行队列<br>js中有一个重要的概念就是执行队列。<br>js只有一个主线程，它是单线程的。<br>其他模块把任务分解成好多的小模块，这些小模块排成一个队列，队列最前面的进入主线程执行，执行完之后第二个进入主线程执行，这个队列就是js的执行队列。有点像操作系统里面的轮转时间片。<br>JavaScript三大部分：ECMAScript、DOM、BOM<br>• ECMAScript是符合ECMA标准的基本javascript。<br>• DOM是Document Object Model文档对象模型，可以操作页面的代码，可以操作html和css部分。DOM是非常非常重要的部分。<br>• BOM是Browser Object Model浏览器对象模型，操作浏览器shell的。因为每一个浏览器厂家的不同，导致我们在每一个浏览器操作BOM都不一样，因此这里大概了解一下就可以了。<br>如何引入JavaScript代码<br>到这里我们大概了解javascript是什么东西了，那么我们如何在html页面里面引入js代码呢？<br>1.页面内嵌script标签<br>我们可以在<head>标签里面或者</head><body>标签里面写一个<script></script>，这个标签有一个type属性，如果要写的话就写完整的”text/javascript”，要不然就不写，浏览器会默认是这个type值，如果写还写错的话浏览器就会报错。<br>写完标签之后，我们就可以在这个标签里面写js代码了。<br>2.引入外部js文件<br>script标签除了可以在里面直接写代码之外，还可以写一个src属性来引入外部的js文件。<br>• 有一点值得注意的是，一个script标签只能在里面写代码或者引入外部js文件，不能既引入又在里面写代码。<br>• 一个script标签就是一个代码块，一个页面可以引入多个代码块。<br>• 为了符合传统页面的web标准（w3c标准的一项）：结构、样式、行为相分离，我们一般采用第二种引入外部js文件的方法。我们的html、css、js最好放在专门的文件里面，然后在html里面引入外部文件。<br>• 浏览器在加载我们的html文件的时候，当遇到link标签的时候会异步加载，但是到script标签的时候并不会异步加载，而是会完全不加载后面的内容，而是去下载这个js文件，并且执行js文件里面的内容，之后下载并且执行完全部的js内容之后，浏览器才会继续执行html后面的代码。<br>这样就导致了一个问题，如果js是操作DOM的话，我们页面的DOM还没有出来，js就操作，就会出现错误，而且写在前面如果js文件比较大的话，就会导致页面一直没有内容。<br>因此，为了避免这种情况的出现，我们一般把script标签写在body标签里面的最后一行。<br>JavaScript基本语法<br>• 变量声明<br>js是一种弱数据类型的语言，任何类型的变量都用关键字var来声明。<br>var arr = [1, 2, 3];<br>var num = 123;<br>var string = “abc”;</body></p>
+            <p>• Mosaic是互联网历史上第一个普遍使用和能够显示图片的网页浏览器，1993年问世。<br>• 后来由于商标权的转让，原本的开发团队又开发了Netscape Navigator网景浏览器，也是现在很多浏览器的前身。<br>• js作为Netscape Navigator浏览器的一部分首次出现在1996年，它最初的设计目标是改善网页的用户体验，js的作者是Brendan Eich。<br>• 起初js被命名为LiveScript，后因为和Sun公司合作，Sun公司的Java很出名，因为市场宣传需要，所以改名为JavaScript，后来Sun公司被Oracle公司收购，因此js的版权现在归Oralcle所有。<br>浏览器的组成</p>
+<p>###前面提到过，浏览器主要有两部分组成：shell外壳部分和内核部分，其实内核还包括了很多东西。<br>1.渲染引擎，内核里的渲染引擎主要作用于html和css部分，定义了语法规则、渲染规则以及渲染路径和速度等等。<br>2.js引擎。<br>2001年发布了ie6，首次实现对js引擎的优化。<br>2008年Google发布了Chrome，它是采用优化后的js引擎，引擎代号V8，因能把js代码直接转化成机械码0101来执行，进而以速度快而闻名。<br>后来Firefox也推出了具有强大功能的js引擎<br>Firefox 3.5 TraceMonkey（对频繁执行的代码做了路径优化）<br>Firefox 4.0 JeagerMonkey<br>3.其他模块。</p>
+<p>##JavaScript的特点<br>1.解释性语言——不需要编译代码，可以跨平台。<br>像php、js、jsp都是解释性语言。<br>2.单线程——js是单线程的语言，同时只能执行一件事情。<br>3.ECMA标准——为了统一js的规则，推出了ECMA标准，因此js也称为ECMAScript。<br>JavaScript执行队列<br>js中有一个重要的概念就是执行队列。<br>js只有一个主线程，它是单线程的。<br>其他模块把任务分解成好多的小模块，这些小模块排成一个队列，队列最前面的进入主线程执行，执行完之后第二个进入主线程执行，这个队列就是js的执行队列。有点像操作系统里面的轮转时间片。</p>
+<p>##JavaScript三大部分：ECMAScript、DOM、BOM<br>• ECMAScript是符合ECMA标准的基本javascript。<br>• DOM是Document Object Model文档对象模型，可以操作页面的代码，可以操作html和css部分。DOM是非常非常重要的部分。<br>• BOM是Browser Object Model浏览器对象模型，操作浏览器shell的。因为每一个浏览器厂家的不同，导致我们在每一个浏览器操作BOM都不一样，因此这里大概了解一下就可以了。</p>
+<p>##如何引入JavaScript代码<br>到这里我们大概了解javascript是什么东西了，那么我们如何在html页面里面引入js代码呢？</p>
+<p>###1.页面内嵌script标签<br>我们可以在<head>标签里面或者</head><body>标签里面写一个<script></script>，这个标签有一个type属性，如果要写的话就写完整的”text/javascript”，要不然就不写，浏览器会默认是这个type值，如果写还写错的话浏览器就会报错。<br>写完标签之后，我们就可以在这个标签里面写js代码了。</body></p>
+<p>###2.引入外部js文件<br>script标签除了可以在里面直接写代码之外，还可以写一个src属性来引入外部的js文件。<br>• 有一点值得注意的是，一个script标签只能在里面写代码或者引入外部js文件，不能既引入又在里面写代码。<br>• 一个script标签就是一个代码块，一个页面可以引入多个代码块。<br>• 为了符合传统页面的web标准（w3c标准的一项）：结构、样式、行为相分离，我们一般采用第二种引入外部js文件的方法。我们的html、css、js最好放在专门的文件里面，然后在html里面引入外部文件。<br>• 浏览器在加载我们的html文件的时候，当遇到link标签的时候会异步加载，但是到script标签的时候并不会异步加载，而是会完全不加载后面的内容，而是去下载这个js文件，并且执行js文件里面的内容，之后下载并且执行完全部的js内容之后，浏览器才会继续执行html后面的代码。<br>这样就导致了一个问题，如果js是操作DOM的话，我们页面的DOM还没有出来，js就操作，就会出现错误，而且写在前面如果js文件比较大的话，就会导致页面一直没有内容。<br>因此，为了避免这种情况的出现，我们一般把script标签写在body标签里面的最后一行。</p>
+<p>##JavaScript基本语法</p>
+<p>##• 变量声明<br>js是一种弱数据类型的语言，任何类型的变量都用关键字var来声明。<br>var arr = [1, 2, 3];<br>var num = 123;<br>var string = “abc”;</p>
 <p>赋值可以在声明的同时赋值也可以在后面赋值。<br>var num = 123;<br>var num;<br>num = 123;</p>
-<p>这两种方法是一样的效果。<br>同时，我们有一种单一var模式，当我们要声明多个变量的时候，为了节省代码量，一般只写一个var：<br>var num1 = 123,<br>      num2 = 123,<br>      num3 = 123;<br>JavaScript<br>变量名要上下对齐，这样结构能加清晰，也能节省很多代码。<br>• 变量命名规则<br>1.以英文字母、_、$符号开头。<br>2.变量名可以包括数字。<br>3.不可以使用系统自带的关键字、保留字作为变量名。<br>关键字是被系统定义了语法的单词，像var、window、if、else这一类都算作关键字。（关键字在编辑器里面是可以变色的）<br>保留字是为以后升级可能会变成关键字做的保留，像java、int、enum、abstract、short、boolean等等都是保留字。<br>值类型～数据类型<br>js中的数据的值主要分为两大类：<br>1.不可改变的原始值<br>主要有：Number、String、Boolean、undefined、null<br>这些数据一般叫做栈数据<br>undefined是未定义的意思，而null是空的意思，他们俩的区别在于，null有值，不过这个值是空值，而undefined是未定义，完全没有值的意思。null一般用作占位。<br>var demo = null;<br>console.log(demo); // null<br>var a;<br>console.log(a); //undefined<br>JavaScript<br>我们在浏览器上按F12，打开控制台，就可以看到console.log的结果了。<br>2.引用值<br>主要有：数组array、对象object、函数function<br>这些数据一般叫做堆数据<br>var arr = [1, 2, 3, 4];<br>var object = {<br>      name: ‘demo’,<br>      age: ‘18’<br>}<br>console.log(arr); //1,2,3,4<br>console.log(object); //[Object Object]<br>console.log(object.name); // demo<br>JavaScript<br>那么这两种数据类型的区别在哪里呢？<br>我们举一个例子：<br>var num = 123,<br>      num1 = num;<br>num = 234;<br>console.log(num); //234<br>console.log(num1); //123<br>JavaScript<br>我们发现num的改变对num1完全没有影响。<br>var arr = [1, 2, 3],<br>      arr1 = arr;<br>arr.push(4);<br>arr.push(5);<br>console.log(arr); //1,2,3,4,5<br>console.log(arr1); //1,2,3,4,5<br>JavaScript<br>我们发现我们根本没有改变arr1的值，只是改变了arr的值，但是arr1也跟着改变了，这就是二者之间的第一个区别。<br>不过，如果我们是给arr重新赋值一个新的数组的话，那么arr1并不是这个新的数组。<br>arr = [1, 2, 3, 4, 5];<br>arr1 –&gt; 1, 2, 3<br>这是为什么呢？<br>因为原始值是存放在栈里面的，而引用值是存放在堆里面的，原始值的赋值是把值的内容赋值一份给另一个变量，但是引用值却不是这样。引用值的变量名存在栈里面，但是值却是存在堆里面的，栈里面的变量名只是指向了一个堆空间，这个堆空间存的是我们一开始赋的值，当我们写arr1 = arr的时候，其实是把arr1指向了和arr指向的同一个的堆空间，这样当我们改变arr的内容的时候，其实就是改变了这个堆空间的内容，自然同样指向这个堆空间的arr1的值也随着改变了。</p>
+<p>这两种方法是一样的效果。<br>同时，我们有一种单一var模式，当我们要声明多个变量的时候，为了节省代码量，一般只写一个var：<br>var num1 = 123,<br>      num2 = 123,<br>      num3 = 123;<br>JavaScript<br>变量名要上下对齐，这样结构能加清晰，也能节省很多代码。</p>
+<p>##• 变量命名规则<br>1.以英文字母、_、$符号开头。<br>2.变量名可以包括数字。<br>3.不可以使用系统自带的关键字、保留字作为变量名。<br>关键字是被系统定义了语法的单词，像var、window、if、else这一类都算作关键字。（关键字在编辑器里面是可以变色的）<br>保留字是为以后升级可能会变成关键字做的保留，像java、int、enum、abstract、short、boolean等等都是保留字。</p>
+<p>#值类型～数据类型</p>
+<p>##js中的数据的值主要分为两大类：</p>
+<p>###1.不可改变的原始值<br>主要有：Number、String、Boolean、undefined、null<br>这些数据一般叫做栈数据<br>undefined是未定义的意思，而null是空的意思，他们俩的区别在于，null有值，不过这个值是空值，而undefined是未定义，完全没有值的意思。null一般用作占位。<br>var demo = null;<br>console.log(demo); // null<br>var a;<br>console.log(a); //undefined<br>JavaScript<br>我们在浏览器上按F12，打开控制台，就可以看到console.log的结果了。</p>
+<p>###2.引用值<br>主要有：数组array、对象object、函数function<br>这些数据一般叫做堆数据<br>var arr = [1, 2, 3, 4];<br>var object = {<br>      name: ‘demo’,<br>      age: ‘18’<br>}<br>console.log(arr); //1,2,3,4<br>console.log(object); //[Object Object]<br>console.log(object.name); // demo<br>JavaScript<br>那么这两种数据类型的区别在哪里呢？<br>我们举一个例子：<br>var num = 123,<br>      num1 = num;<br>num = 234;<br>console.log(num); //234<br>console.log(num1); //123<br>JavaScript<br>我们发现num的改变对num1完全没有影响。<br>var arr = [1, 2, 3],<br>      arr1 = arr;<br>arr.push(4);<br>arr.push(5);<br>console.log(arr); //1,2,3,4,5<br>console.log(arr1); //1,2,3,4,5<br>JavaScript<br>我们发现我们根本没有改变arr1的值，只是改变了arr的值，但是arr1也跟着改变了，这就是二者之间的第一个区别。<br>不过，如果我们是给arr重新赋值一个新的数组的话，那么arr1并不是这个新的数组。<br>arr = [1, 2, 3, 4, 5];<br>arr1 –&gt; 1, 2, 3<br>这是为什么呢？<br>因为原始值是存放在栈里面的，而引用值是存放在堆里面的，原始值的赋值是把值的内容赋值一份给另一个变量，但是引用值却不是这样。引用值的变量名存在栈里面，但是值却是存在堆里面的，栈里面的变量名只是指向了一个堆空间，这个堆空间存的是我们一开始赋的值，当我们写arr1 = arr的时候，其实是把arr1指向了和arr指向的同一个的堆空间，这样当我们改变arr的内容的时候，其实就是改变了这个堆空间的内容，自然同样指向这个堆空间的arr1的值也随着改变了。</p>
 <p>• 栈内存一点被赋值了，就不可以改变了，我们即使给num重新赋值为234，也是在栈里面重新开辟了一块空间赋值234，然后把num指向了这个空间，前面那个存放123的空间还存在，只是没有指针指向这里罢了。<br>第二点区别则是：原始值不可以被改变，引用值可以被改变。<br>var arr = [1, 2, 3, 4];<br>arr.length = 2;<br>console.log(arr); // 1,2<br>var str = “1234”;<br>str.length = 2;<br>console.log(str); // 1234<br>JavaScript<br>这里涉及了一个包装类的概念，我们后面会提到。<br>JavaScript语句基本规则<br>1.语句后面要用英文分号结束 “;”<br>2.js语法错误会引发后面的代码终止，但不会影响其他的js代码块。这里仅限于逻辑错误，低级的语法错误会导致代码全都执行不了。<br>3.书写要规范，=、+、-、/、%两边都要留有空格。<br>num + 1;</p>
 <p>num = num + 2;</p>
 <p>num = num / 2;<br>JavaScript<br>一些公司还会有自己的其他编码规范，比如百度公司就会要求小括号和大括号左右两边留有空格。<br>for () {}</p>
@@ -520,6 +533,129 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/23/css/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/23/css/" itemprop="url">Html</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-23T09:24:31+08:00">
+                2018-04-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> html—–结构<br>   Css——样式cascading style sheet<br>   Javascript–行为<br>引入css的方式<br>行间样式<div style="”" ”=""></div><br>页面级css:在head标签内用style标签包围<br>外部css文件:以css为后缀建立文件,通过<link href="”" .css”="">引入<br>知识点:对于计算机来说<br>异步:同时进行(link是异步的,同时加载)<br>同步:不同时进行<br>Css权重<br>!important           Infinity<br>行间样式        1000<br>id                  100<br>Class|属性|伪类  10<br>标签|伪元素     1<br>通配符          0<br>选择器<br>id选择器<div id="”one" ”=""></div>一对一 #one{}<br>Class选择器<div class="”" demo1="" demo2”=""></div>多对多 .demo1{}<br>标签选择器<br>div{}<br>(4)通配符-&gt;选择全部标签  *{}<br>(5)分组选择器One,Two,Three{}<br>(6)属性选择器[id]{  }<br>(7)并列选择器div.demo{}<br>(8)伪类选择器a:hover{ }<br>4.(1)父子选择器/派生选择器</p>
+<p><div><span>123</span></div><br><span>234</span><br>要求:只对123修饰<br>div span{}<br>  (2)直接子元素选择器</p>
+<p><div><br><em>1</em><br><strong><br><em>2</em><br></strong><br></div><br>字体样式<br>font-size:16px;设置字体大小实质上是在设置字体高度<br>font-weight:lighter|normal|bold|bolder|100,200-900(整百,无单位)<br>(strong=font-weight:bold;)<br>font-style:italic;=(<em></em>)<br>font-family:字体类型<br>字体颜色:color:;<br>颜色: 1纯英文单词<br> 2颜色代码:红绿蓝rgb(0-255,0-255,0-255)<br> 3 #000000(黑)-#ffffff(白)若每两位都重复,则(#000-#fff)<br>border<br>border:1px solid blue;<br>{border-width:;<br>     border-style:;<br>     border-color:;transparent(透明)<br>}<br>border-radius:10px;50%为圆;<br>文本对齐方式text-align:left 默认|center|right;<br>  单行文本所占高度line-heigh:;<br>单行文本所占高度等=容器高度(文本垂直居中方法)<br>text-indent:2em;首段文本缩进<br>px:像素(相对单位)<br>1em= 1 font-size<br>text-decoration:none;underline;下划线<br>cursor:help;光标:点上去产生问号;<br>行级元素,块元素,行级块元素<br>行级元素:span,strong,em,a,del<br>特点:内容决定元素所占位置<br>不可通过css改变宽高<br>块级元素:div,p,ul,li,ol,form,address<br>特点:独占一行,可以通过css改变宽高<br>行级块元素:img<br>特点:内容决定大小,可以改变宽高;<br>默认:<br>span{display:inline;}<br>div{display:block;}<br>img{display:inline-block}<br>可以使用display改变元素类型<br>注意:凡是带有inline的元素,都有文字特性<br>块级元素能嵌套任何元素;行级元素只能嵌套行级元素<br>对于网页的写法:<br>先写html,后写css;<br>先定义功能css,后写html(先定义功能,后选配功能)<br>自定义标签如em{font-style:normal;color:#ddd;}<br>盒子三大组成部分:border+padding+(width+height)//盒子壁+内边距+内容;<br>盒子模型=margin+border+padding+(width+height)<br>Padding:10px  10px   10px   10px:<br>        上    右      下     左<br>        上    右(左)   下<br>上下  右(左)<br>body有个默认的margin:8px<br>定位:position<br>格式:position:relative/absolute/fixed;<br>        right/left:;<br> bottom/top:;<br>绝对定位:absolute;<br>特点:脱离原来位置进行定位<br> 相对于最近的有定位的父级进行定位,如果没有,相对于body定位<br>相对定位:relative<br>特点:保留原来位置进行定位<br>相对于原来自己的位置进行定位<br>一般:用relative当参考物,用absolute来定位<br>z-index:0-…;数字越大,越往上浮;<br>opacity:0.1-0.9;透明度<br>知识:令块元素在页面居中;<br>{<br>position:absolute;<br>left:50%;<br>top:50%;<br>margin-left:-width/2%;<br>margin-top:-height/2%;<br>}<br>令文本在块中居中;<br>line-height=height；<br>    text-align: center;<br>12.Bfc:(block format context)块级格式化上下文<br>如何触发一个盒子的bfc(以下方式按具体情况使用)<br>position:<br>Display<br>float:<br>Overflow:hidden<br>margin合并问题<br>两个div上下合并,margin-bottom:100px;margin-top:10px;取最大为两者距离,可通过触发bfc解决,但一般不使用这种方法;一般都是只设置top和bootom其中一个.<br>两个span左右合并问题;<br>14.浮动模型Float:left/right;<br> 浮动元素产生了浮动流;所有产生了浮动流的元素,块级元素看不到他们.<br>  产生了bfc的元素和文本类属性的元素以及文本都能看到浮动元素;<br>*父级包住浮动元素的根本方法<br>Clear:both;清除浮动流;只能在块级元素上才能使 用<br>Position:absolute;float:left;打内部把元素转换为inline-block;<br>伪元素;before/after逻辑最前/逻辑最后<br>伪元素本来就存在,css仅仅是选择了它;伪元素是天生的行级元素<br>格式:before{content:” ”;}<br>父级包住子元素,用伪元素清除浮动</p>
+<p><div class="”wrapper”"></div><br>.wrapper::after{<br>content:””;<br>clear:both;<br>display:block;<br>}<br>让文字环绕图片;使用img{float:right;}即可<br>溢出容器,打点显示<br>单行文本<br>文本多于容器宽度,打点显示<br>white-space:nowrap;强制不换行<br>overflow:hidden;溢出隐藏<br>text-overflow:ellipsis;溢出打点显示<br>多行文本<br>溢出打点:人工计算宽度后手工添上的;<br>只显示容器内文字<br>容器高度=2-n倍line-height;显示2-n行<br>overflow:hidden;<br>背景图片<br>background-image:url(.jpg);<br>background-size:10px 10px;<br>background-repeat:no-repeat;<br>background-possition:(1)left bottom;<br>                      (2)50% 50%;=center center;居中<br>                      (3)px px;<br>去掉a标签的原有属性<br>a{<br>display:inline-block;<br>text-decoration:none;<br>Color:#424242;<br>Width:<br>Height:<br>}<br>一个图片背景,文字和图片只显示一个(不同时出现)<br><a href="”#”">淘宝网</a><br>text-indent: px;文本文段缩进;<br>     hite-space:nowrap;<br>verflow:hidden;<br>height:0px;设置盒子宽度:<br>  padding-top:  ;把盒子撑开;<br>     Overf:hidden;<br>注意:a标签不能嵌套a标签<br>文本类元素(包含inline)<br>一个盒子和一段文字<br>若盒子内有文字,外面文字与里面元素会对齐;</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/20/html/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -539,7 +675,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/20/html/" itemprop="url">1Html</a></h1>
+                <a class="post-title-link" href="/2018/04/20/html/" itemprop="url">Html</a></h1>
         
 
         <div class="post-meta">
@@ -690,7 +826,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
